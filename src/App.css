@@ -1,0 +1,283 @@
+
+*  {
+  font-family: 'Inter', sans-serif;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}
+
+.container_header {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+figure{
+  margin: 0;
+}
+
+#button_inicio {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.268);
+  border-radius: 15px;
+  width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+}
+form{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.582);
+  
+}
+
+.descricao {
+  margin-bottom: 0.4rem;
+  font-size: 15px;
+}
+
+form p {
+  color: rgba(0, 0, 0, 0.485);
+  font-size: 10px;
+}
+
+#input_descricao {
+  font-size: 12px;
+  height: 4rem;
+  width: 100%;
+  border: none;
+}
+
+.input_valor {
+  border: none;
+  display: flex;
+  height: 1.5rem;
+  width: 60%;
+  margin-top: 1rem ;
+  margin-bottom: 2rem;
+  margin-right: 0;
+}
+
+.container_list {
+  height: 18rem;
+  overflow: auto;
+}
+
+
+.container_valor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#div_valor {
+  width: 50%;
+
+}
+#div_tipo{
+  width: 50%;
+  height: 100%;
+}
+#tipoValor {
+  border: none;
+  display: flex;
+  height: 1.5rem;
+  width: 80%;
+  margin-top: 1rem ;
+  margin-bottom: 2rem;
+  margin-right: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.valorTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  background-color: #FD377E;
+  color: aliceblue;
+  padding: 0 1rem 0 1rem;
+  font-size: 12px;
+  border-radius: 15px;
+}
+
+
+
+
+ @media only screen and (min-width: 620px) {
+  .container_header{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 14rem 2rem;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    
+  }
+  
+  form {
+    display: flex ;
+    flex-direction: column;
+    width: 30%;
+    height: 18rem;
+  }
+  
+  form p {
+    margin: 0 0 2rem;
+    color: rgba(0, 0, 0, 0.472);
+  }
+  
+  #input_descricao {
+    padding-left: 1.5rem;
+    width: 86%;
+    height: 4rem;
+  }
+  .container_info{
+    width: 60%;
+  }
+  
+
+  #inserir {
+    background-color: #FD377E;
+    margin-top: 1.7rem;
+    color: aliceblue;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .buttons button {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(128, 128, 128, 0.172);
+    margin: 0.5rem;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+  span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+  }
+
+  .list {
+    list-style: none;
+  }
+
+  .liCards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    border-left: 4px solid green;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+  }
+  .liCards h2 {
+    font-size: 15px;
+  }
+
+
+    
+
+  
+ 
+} 
+
+@media(max-width: 426px){
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form{
+    width: 20rem;
+    
+  }
+
+  #input_descricao{
+    width: 90%;
+  }
+
+  #inserir {
+    background-color: #FD377E;
+    margin-top: 1.7rem;
+    color: aliceblue;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  .container_header{
+    display: flex;
+    align-items: center;
+
+  }
+
+  .container_info{
+    margin-top: 22rem;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    position: absolute;
+  }
+
+  .valorTotal{
+    position: absolute;
+    margin-top: 49rem;
+  }
+
+  .container_list{
+    position: absolute;
+    margin-top: 4rem;
+    width: 19rem;
+    height: 16rem;
+  }
+
+  .liCards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  
+}
